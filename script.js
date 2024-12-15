@@ -37,6 +37,7 @@ gridCells.forEach((cell, index) => {
         const cellColor = getColor(distance);
         cell.style.backgroundColor = cellColor;
         cell.style.boxShadow = `0px 0px 8px ${distance/10}px ${cellColor}`;
+        cell.style.zIndex = Math.round(distance);
 
 
         // Add hover event
