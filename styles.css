@@ -4,7 +4,7 @@ html {
     --cell-size: 15px; /* Cell size for the grid */
 }
 
-.grid-container {
+grid-container {
     margin: 100px;
     padding: 20px;
     display: grid;
@@ -17,15 +17,14 @@ html {
     border-radius: 10px;
     inline-size: max-content; /* Fit the width of grid items */
     block-size: max-content;  /* Fit the height of grid items */
-    
 }
 
 
-.grid-cell {
+grid-cell {
     width: var(--cell-size);
     aspect-ratio: 1 / 1; /* Square aspect ratio */
-    border-radius: 30%;
-    border: 1px solid rgb(26, 26, 26);
+    border-radius: 20%;
+    /* border: 1px solid rgba(46, 228, 0, 0.1); */
     font-size: calc(var(--cell-size)*0.9);
     display: flex;
     align-items: center;
