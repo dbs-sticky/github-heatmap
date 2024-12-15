@@ -14,17 +14,11 @@ display-container {
     padding: 30px;
     inline-size: fit-content; /* Fit the width of grid items */
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    line-height: 1.5;
-}
-
-stat-card {
-
+    font-weight: 900;
 }
 
 summary-row {
-
-
+    text-shadow: 0 0 10px green;
 }
 
 grid-container {
