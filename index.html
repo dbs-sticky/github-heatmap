@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>GitHub Heatmap</h1>
-    </header>
     <main>
         <script id="data-script" type="application/json">
 	
@@ -206,7 +203,15 @@
             }
         
         </script>
-        
+
+
+    <display-container>  
+        <summary-row>
+            <p id="total-distance"></p>
+            <p id="average-distance"></p>
+            <p id="average-week"></p>
+            <p id="longest"></p>
+        </summary-row>
         <grid-container>
             <grid-cell></grid-cell>
             <grid-cell></grid-cell>
@@ -575,6 +580,7 @@
             <grid-cell></grid-cell>
             <grid-cell></grid-cell>
         </grid-container>
+    </display-container>
     </main>
     <script src="script.js"></script>
 </body>
