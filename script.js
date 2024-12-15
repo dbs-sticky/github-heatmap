@@ -14,7 +14,7 @@ function getColor(distance) {
     const lightness = Math.round((100 * (distance / maxDistance)));
     const chroma = 0.37;
     const hue = 142;
-    console.log(`oklch(${lightness}% ${chroma} ${hue})`);
+    // console.log(`oklch(${lightness}% ${chroma} ${hue})`);
     return `oklch(${lightness}% ${chroma} ${hue})`;
 }
 
