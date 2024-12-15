@@ -1,28 +1,30 @@
 html {
-	background-color: white;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    --cell-size: 15px; /* Cell size for the grid */
 }
 
 .grid-container {
-	margin: 100px;
-	padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(52, 10px); /* 52 columns, each 10px wide */
-  grid-template-rows: repeat(7, 10px);    /* 7 rows, each 10px tall */
-  gap: 3px; /* No gap between grid items (optional, adjust as needed) */
-  background-color: black; /* Optional: background for visibility */
-  border: 1px solid #3D444D; /* Optional: border for the grid container */
-	border-radius: 10px;
-	inline-size: max-content; /* Fit the width of grid items */
-  block-size: max-content;  /* Fit the height of grid items */
+    margin: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(52, var(--cell-size)); /* 52 columns, each 10px wide */
+    grid-template-rows: repeat(7, var(--cell-size));    /* 7 rows, each 10px tall */
+    gap: calc(var(--cell-size)*0.4); /* No gap between grid items (optional, adjust as needed) */
+    background-color: black; /* Optional: background for visibility */
+    border: 1px solid #3D444D; /* Optional: border for the grid container */
+    border-radius: 10px;
+    inline-size: max-content; /* Fit the width of grid items */
+    block-size: max-content;  /* Fit the height of grid items */
 }
 
 
 .grid-cell {
-  width: 10px;
-  height: 10px;
-  background-color:black; /* Grey cells */
-	border-radius: 2px;
-	cursor: pointer;
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color:black; /* Grey cells */
+    border-radius: 30%;
+    cursor: pointer;
+    border: 1px solid rgb(26, 26, 26);
 }
 
