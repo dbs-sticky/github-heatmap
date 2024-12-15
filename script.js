@@ -11,7 +11,9 @@ const maxDistance = Math.max(...distances);
 
 // Function to get color based on distance walked using oklch color space
 function getColor(distance) {
-    const lightness = Math.round((100 * (distance / maxDistance)));
+    // const lightness = Math.round((100 * (distance / maxDistance)));
+    const lightness = Math.round((100 * (Math.log(distance + 1) / Math.log(maxDistance + 1))));
+
     const chroma = 0.37;
     const hue = 142;
     // console.log(`oklch(${lightness}% ${chroma} ${hue})`);
