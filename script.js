@@ -9,11 +9,13 @@ const gridCells = document.querySelectorAll('.grid-cell');
 const distances = Object.values(data).map(Number);
 const maxDistance = Math.max(...distances);
 
-// Function to calculate color based on distance
+// Function to get color based on distance walked using oklch color space
 function getColor(distance) {
-    const intensity = distance / maxDistance;
-    const green = Math.floor(255 * intensity);
-    return `rgb(0, ${green}, 0)`;
+    const lightness = Math.round((100 * (distance / maxDistance)));
+    const chroma = 0.37;
+    const hue = 142;
+    console.log(`oklch(${lightness}% ${chroma} ${hue})`);
+    return `oklch(${lightness}% ${chroma} ${hue})`;
 }
 
 // Create tooltip element
