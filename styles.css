@@ -1,7 +1,7 @@
 html {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    --cell-size: 10px; /* Cell size for the grid */
+    --cell-size: 15px; /* Cell size for the grid */
 }
 
 grid-container {

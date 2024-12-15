@@ -44,6 +44,7 @@ gridCells.forEach((cell, index) => {
         cell.addEventListener('mouseenter', (e) => {
             tooltip.textContent = `Distance: ${distance} km`;
             tooltip.style.display = 'block';
+            tooltip.style.zIndex = 101;
             // tooltip.style.left = `${e.pageX + 10}px`;
             // tooltip.style.top = `${e.pageY + 10}px`;
         });
