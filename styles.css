@@ -1,0 +1,42 @@
+html {
+	background-color: black;
+}
+
+.grid-container {
+	margin: 100px;
+	padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(52, 10px); /* 52 columns, each 10px wide */
+  grid-template-rows: repeat(7, 10px);    /* 7 rows, each 10px tall */
+  gap: 3px; /* No gap between grid items (optional, adjust as needed) */
+  background-color: black; /* Optional: background for visibility */
+  border: 1px solid #3D444D; /* Optional: border for the grid container */
+	border-radius: 10px;
+	inline-size: max-content; /* Fit the width of grid items */
+  block-size: max-content;  /* Fit the height of grid items */
+}
+
+.grid-container:nth-child(10) {
+	background-color: green;
+}
+
+.grid-cell {
+  width: 10px;
+  height: 10px;
+  background-color: #161b22; /* Grey cells */
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+
+.grid-cell:nth-child(8n) {
+	background-color: green;
+}
+
+.grid-cell:nth-child(11n) {
+	background-color: lightgreen;
+}
+
+.grid-cell:nth-child(360) {
+	background-color: red;
+}
