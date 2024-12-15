@@ -1,7 +1,7 @@
 html {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    --cell-size: 10px; /* Cell size for the grid */
+    --cell-size: 15px; /* Cell size for the grid */
 }
 
 .grid-container {
@@ -25,7 +25,7 @@ html {
     aspect-ratio: 1 / 1; /* Square aspect ratio */
     border-radius: 30%;
     border: 1px solid rgb(26, 26, 26);
-    font-size: calc(var(--cell-size)*0.8);
+    font-size: calc(var(--cell-size)*0.9);
     display: flex;
     align-items: center;
     justify-content: center;
